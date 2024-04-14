@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from wpriverthemes.com/HTML/stag/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Mar 2024 13:42:41 GMT -->
+<head>
+    <!-- ===== Meta ===== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.svg">
+
+    <!-- ===== Title ===== -->
+    <title>Stag - Personal Portfolio HTML5 Template</title>
+
+    <!-- ===== LineAwesome ===== -->
+    <link rel="stylesheet"
+        href="../../../maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+    <!-- ===== Fonts ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,100;1,9..40,200&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- ===== Stylesheet ===== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <main class="blog-detail-page" id="top">
+
+        <!-- Sticky Sidebar
+        ======================================= -->
+        <div class="sticky-sidebar">
+            <div class="sticky-sidebar-inner">
+                <div class="sidebar-top">
+                    <div class="sidebar-logo">
+                        <div class="left">
+                            <a href="index.html" class="logo-img">
+                                <img src="assets/imgs/logo.svg" alt="Logo">
+                            </a>
+                            <a href="index.html" class="logo-text">STAG</a>
+                        </div>
+                        <div class="right">
+                            <span id="current-time"></span>
+                            <i class="las la-ellipsis-v"></i>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-me">
+                        <div class="sidebar-me-inner">
+                            <div class="img-box">
+                                <img src="assets/imgs/me.png" alt="Me">
+                            </div>
+                            <div class="content">
+                                <h3>David Henderson</h3>
+                                <p>Back End Developer</p>
+                                <span class="location"><i class="ph-duotone ph-map-pin"></i> San francisco</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-menu">
+                        <nav class="menu-lists">
+                            <ul>
+                                <li>
+                                    <a href="index.html"><span class="icon"><i class="ph-duotone ph-house"></i></span> <span class="title">Home</span></a>
+                                </li>
+                                <li>
+                                    <a href="projects.html"><span class="icon"><i class="ph-duotone ph-squares-four"></i></span> <span class="title">Projects</span></a>
+                                </li>
+                                <li>
+                                    <a href="about.html"><span class="icon"><i class="ph-duotone ph-fingerprint"></i></span> <span class="title">About</span></a>
+                                </li>
+                                <li>
+                                    <a href="gallery.html"><span class="icon"><i class="ph-duotone ph-camera"></i></span> <span class="title">Gallery</span></a>
+                                </li>
+                                <li>
+                                    <a href="contact.html"><span class="icon"><i class="ph-duotone ph-paperclip"></i></span> <span class="title">Contact</span></a>
+                                </li>
+                                <li>
+                                    <a href="blog.html"><span class="icon"><i class="ph-duotone ph-swatches"></i></span> <span class="title">Blog</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="responsive-mode sidebar-bottom">
+                            <div class="social-link-wrap">
+                                <ul class="social-links">
+                                    <li><a href="https://dribbble.com/"><i class="lab la-dribbble"></i></a></li>
+                                    <li><a href="https://twitter.com/"><i class="lab la-xing"></i></a></li>
+                                    <li><a href="https://instagram.com/"><i class="lab la-instagram"></i></a></li>
+                                    <li><a href="https://youtube.com/"><i class="lab la-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                            <p class="copyright-text">
+                                &copy; 2024
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="humberg-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="sidebar-bottom">
+                    <div class="social-link-wrap">
+                        <ul class="social-links">
+                            <li><a href="https://dribbble.com/"><i class="lab la-dribbble"></i></a></li>
+                            <li><a href="https://twitter.com/"><i class="lab la-xing"></i></a></li>
+                            <li><a href="https://instagram.com/"><i class="lab la-instagram"></i></a></li>
+                            <li><a href="https://youtube.com/"><i class="lab la-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="copyright-text">
+                        &copy; 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Stacky Sidebar -->
+
+
+        <div class="page-content-wrapper">
+
+
+            <!-- Blog Detail
+            ======================================= -->
+            <div class="blog-detail-content-wrap">
+                    
+                <section class="project-detail-top">
+                    <div class="custom-container">
+                        <div class="custom-row">
+                            <div class="left">
+                                <div class="project-detail-header section-header">
+                                    <h4 class="subtitle common-box">
+                                        Blog 1
+                                    </h4>
+                                    <div class="animation-texts-wrap">
+                                        <div class="animation-text-inner">
+                                            <ul>
+                                                <li>⌘ It is a long established fact that a reader will distracted in the reads ⌘</li>
+                                                <li>It is a long established fact that a reader will distracted in the reads ⌘</li>
+                                                <li>It is a long established fact that a reader will distracted in the reads ⌘</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="project-top-content">
+                                    <span>PRODUCT DEVELOPMENT</span>
+                                    <h2>Power of framer</h2>
+                                    <p>To address this challenge, our approach involved crafting a distinctive brand identity that effectively communicated Vutura Sioma's values of sustainability, innovation, and authenticity. Our team meticulously devised a comprehensive brand strategy centered around creating a visually.</p>
+                                </div>
+
+                            </div>
+                            <div class="right">
+                                <ul class="project-address-lists">
+                                    <li>
+                                        <div class="icon">
+                                            <i class="las la-user-circle"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p><strong>Author</strong> - Jenson Chan</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                             <i class="las la-calendar"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p><strong>Date</strong> - December 04, 2024</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                          <i class="las la-globe-americas"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p><strong>Category</strong> - Product Design</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="las la-business-time"></i>
+                                        </div>
+                                        <div class="content">
+                                            <p><strong>Read</strong> - 10 mins to read</p>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <div class="project-details-hero-wrap">
+                    <div class="custom-container">
+                        <div class="project-details-hero-img">
+                            <img src="assets/imgs/blog-detail-1.jpg" alt="Blog">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="problem-and-solution-wrap">
+                    <div class="custom-container">
+                        <div class="problem-solution-box">
+                            <h4 class="subtitle common-box">Features of framer</h4>
+                            <div class="content-box">
+                                <p>To address this challenge, our approach involved crafting a distinctive brand identity that effectively communicated Vutura Sioma's values of sustainability, innovation, and authenticity. Our team meticulously devised a comprehensive brand strategy centered around creating a visually.</p>
+                                <p>Our goal was to provide a strong visual language and help BizzBuzz to stand out and get the appealing look & feel which resonates with a target audience and gives a feeling of joy and safety during product usage. Also, we needed to introduce the product to potential users.</p>
+                            </div>
+                        </div>
+                        <div class="problem-solution-box">
+                            <h4 class="subtitle common-box">Animations and responsive design</h4>
+                            <div class="content-box">
+                                <p>To address this challenge, our approach involved crafting a distinctive brand identity that effectively communicated Vutura Sioma's values of sustainability, innovation, and authenticity. Our team meticulously devised a comprehensive brand strategy centered around creating a visually.</p>
+                                <p>Our goal was to provide a strong visual language and help BizzBuzz to stand out and get the appealing look & feel which resonates with a target audience and gives a feeling of joy and safety during product usage. Also, we needed to introduce the product to potential users.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-img-2-col">
+                    <div class="custom-container">
+                        <div class="project-img-2-col-box">
+                            <img src="assets/imgs/blog-detail-2.jpg" alt="blog">
+                        </div>
+                        <div class="project-img-2-col-box">
+                            <img src="assets/imgs/blog-detail-3.jpg" alt="blog">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-detail-col-1 problem-and-solution-wrap">
+                    <div class="custom-container">
+                        <div class="problem-solution-box">
+                            <h4 class="subtitle common-box">Features of framer</h4>
+                            <div class="content-box">
+                                <p>To address this challenge, our approach involved crafting a distinctive brand identity that effectively communicated Vutura Sioma's values of sustainability, innovation, and authenticity. Our team meticulously devised a comprehensive brand strategy centered around creating a visually.
+                                    Our goal was to provide a strong visual language and help BizzBuzz to stand out and get the appealing look & feel which resonates with a target audience and gives a feeling of joy and safety during product usage. Also, we needed to introduce the product to potential users. BizzBuzz is a travel startup born by the collaboration of professionals from tech and banking industries. The company has a strong dev department but the design language was weak and kit-made so that they had a risk of getting lost in the pool of competitors.</p>
+                                <p>To address this challenge, our approach involved crafting a distinctive brand identity that effectively communicated Vutura Sioma's values of sustainability, innovation, and authenticity. Our team meticulously devised a comprehensive brand strategy centered around creating a visually.
+                                    Our goal was to provide a strong visual language and help BizzBuzz to stand out and get the appealing look & feel which resonates with a target audience and gives a feeling of joy and safety during product usage. Also, we needed to introduce the product to potential users. BizzBuzz is a travel startup born by the collaboration of professionals from tech and banking industries. The company has a strong dev department but the design language was weak and kit-made so that they had a risk of getting lost in the pool of competitors.To address this challenge, our approach involved crafting a distinctive brand identity that effectively communicated Vutura Sioma's values of sustainability, innovation, and authenticity. Our team meticulously devised a comprehensive brand strategy centered around creating a visually. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- End Blog Detail -->
+
+
+
+            <!-- Blog
+            ======================================= -->
+            <section class="blog-area">
+                <div class="custom-container">
+                    <div class="blog-header section-header">
+                        <a href="blog.html" class="theme-btn common-box">
+                            <span>
+                                <span class="normal">Blog <i class="las la-arrow-right"></i></span>
+                                <span class="hover">Blog <i class="las la-arrow-right"></i></span>
+                            </span>
+                        </a>
+                        <div class="animation-texts-wrap">
+                            <div class="animation-text-inner">
+                                <ul>
+                                    <li>⌘ It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable ⌘</li>
+                                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable ⌘</li>
+                                    <li>It is a long established fact that a reader will distracted by the readable content of a page when looking an its readable ⌘</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-items">
+                        <div class="project-slider-box">
+                            <a href="blog-detail.html" class="overlay-link"></a>
+                            <div class="project-img">
+                                <img src="assets/imgs/blog-1.png" alt="Blog">
+                                <span class="badge-year">
+                                    <span class="badge-inner">
+                                        <span>2024</span>
+                                        <span>2024</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="project-content">
+                                <h3>Retro Remix</h3>
+                                <p>Ux Design</p>
+                                <a href="blog-detail.html" class="theme-btn common-box">
+                                    <span>
+                                        <span class="normal"><i class="las la-angle-right"></i></span>
+                                        <span class="hover"><img src="assets/imgs/right-arrow.svg" alt="Icon"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-slider-box">
+                            <a href="blog-detail.html" class="overlay-link"></a>
+                            <div class="project-img">
+                                <img src="assets/imgs/blog-2.png" alt="Blog">
+                                <span class="badge-year">
+                                    <span class="badge-inner">
+                                        <span>2024</span>
+                                        <span>2024</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="project-content">
+                                <h3>Mystical Meodows</h3>
+                                <p>Web Development</p>
+                                <a href="blog-detail.html" class="theme-btn common-box">
+                                    <span>
+                                        <span class="normal"><i class="las la-angle-right"></i></span>
+                                        <span class="hover"><img src="assets/imgs/right-arrow.svg" alt="Icon"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-slider-box">
+                            <a href="blog-detail.html" class="overlay-link"></a>
+                            <div class="project-img">
+                                <img src="assets/imgs/blog-3.png" alt="Blog">
+                                <span class="badge-year">
+                                    <span class="badge-inner">
+                                        <span>2024</span>
+                                        <span>2024</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="project-content">
+                                <h3>Cybernetic Dreams</h3>
+                                <p>Brand Marketing</p>
+                                <a href="blog-detail.html" class="theme-btn common-box">
+                                    <span>
+                                        <span class="normal"><i class="las la-angle-right"></i></span>
+                                        <span class="hover"><img src="assets/imgs/right-arrow.svg" alt="Icon"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Blog -->
+
+
+            <!-- Footer -->
+            <footer class="footer-area">
+                <div class="left">
+                    <p>&copy; 2024 All rights reserved by <a href="https://themeforest.net/user/wordpressriver/portfolio">WordPressRiver Themes</a></p>
+                    <p class="mid"><span class="circle-icon"></span>Template by <a href="https://themeforest.net/user/wordpressriver/portfolio">WordPressRiver</a><span
+                            class="circle-icon"></span></p>
+                    <a href="#">Buy Template</a>
+                </div>
+                <a href="#top" class="backto-top">Scroll to top <i class="las la-arrow-up"></i></a>
+            </footer>
+            <!-- End Footer -->
+
+        </div>
+
+    </main>
+
+
+    <!-- JQuery
+    ======================================= -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from wpriverthemes.com/HTML/stag/blog-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Mar 2024 13:42:42 GMT -->
+</html>
