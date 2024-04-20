@@ -481,6 +481,7 @@ main {
     gap: 16px;
 }
 .available-link-wrap {
+    backdrop-filter: blur(26.25249671936035px); /* Standard property */
     -webkit-backdrop-filter: blur(26.25249671936035px);
     background: linear-gradient(.0000026635723315848736deg,rgba(0,170,255,.05) 0%,rgba(182,102,195,.05000000074505806) 100%);
 }
