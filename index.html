@@ -1357,6 +1357,47 @@
         canvas.addEventListener('mouseleave', () => {
             isDragging = false;
         });
+
+        // for email
+        $(document).ready(function () {
+            $('#ajax-form').submit(function (e) {
+                e.preventDefault();
+
+                var form = $(this);
+                var url = form.attr('action');
+                var formData = form.serialize();
+
+                $('#result')
+                    .text('Sending...')
+                    .removeClass('text-green-500 text-red-500')
+                    .addClass('text-blue-500');
+
+                form.find('button[type="submit"]').prop('disabled', true);
+
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: formData,
+                    dataType: 'json',
+                    success: function (response) {
+                        $('#result')
+                            .text(response.message)
+                            .removeClass('text-blue-500 text-red-500')
+                            .addClass('text-green-500');
+                        form.find('button[type="submit"]').prop('disabled', false);
+                        form[0].reset();
+                    },
+                    error: function (xhr, status, error) {
+                        var errorMessage = xhr.responseJSON?.message || 'Something went wrong. Please try again.';
+                        $('#result')
+                            .text(errorMessage)
+                            .removeClass('text-blue-500 text-green-500')
+                            .addClass('text-red-500');
+                        form.find('button[type="submit"]').prop('disabled', false);
+                    }
+                });
+            });
+        });
     </script>
 
 
