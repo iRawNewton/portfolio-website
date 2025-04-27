@@ -165,8 +165,7 @@
                         </div>
                     </div>
 
-                    <form action="https://wpriverthemes.com/HTML/stag/assets/mail/subscribe.php" method="POST"
-                        id="subscribe-form">
+                    <form action="appointment.php" method="POST" id="subscribe-form">
                         <div class="newsletter-box">
                             <input type="email" name="email" placeholder="Your email"> <!-- Added name attribute -->
                             <button type="submit">Book an appointment with me</button>
@@ -227,8 +226,7 @@
 
                     <div class="contact-inner">
                         <div class="contact-form">
-                            <form id="ajax-form" action="https://wpriverthemes.com/HTML/stag/assets/mail/contact.php"
-                                method="POST">
+                            <form id="ajax-form" action="contact.php" method="POST">
                                 <input type="hidden" name="access_key" value="0ea6f02e-35e1-4bc8-801a-f700e7c5a95c">
                                 <input type="hidden" name="subject">
 
@@ -262,10 +260,9 @@
                                     <div class="content">
                                         <h3>Contact Info</h3>
                                         <p>
-                                            <a href="tel:+1284789900">+1-2847-899,</a> <a
-                                                href="tel:+1284789900">+1-2847-899</a>
+                                            <a href="tel:+917002958113">+91 7002 958 113</a>
                                         </p>
-                                        <p><a href="mailto:WordPressRiverstudio@mail.com">yourcompanyemail@mail.com</a>
+                                        <p><a href="mailto:contact@irawnewton.com">contact@irawnewton.com</a>
                                         </p>
                                     </div>
                                 </li>
@@ -282,12 +279,9 @@
             ======================================= -->
             <footer class="footer-area">
                 <div class="left">
-                    <p>&copy; 2024 All rights reserved by <a
-                            href="https://themeforest.net/user/wordpressriver/portfolio">WordPressRiver Themes</a></p>
-                    <p class="mid"><span class="circle-icon"></span>Template by <a
-                            href="https://themeforest.net/user/wordpressriver/portfolio">WordPressRiver</a><span
-                            class="circle-icon"></span></p>
-                    <a href="#">Buy Template</a>
+                    <p>&copy; 2025 All rights reserved by <a href="https://irawnewton.com">iRawNewton</a></p>
+                    <!-- <p class="mid"><span class="circle-icon"></span>Template j by <a href="https://themeforest.net/user/wordpressriver/portfolio">WordPressRiver</a><span class="circle-icon"></span></p>
+                    <a href="#">Buy Template</a> -->
                 </div>
                 <a href="#top" class="backto-top">Scroll to top <i class="las la-arrow-up"></i></a>
             </footer>
@@ -308,6 +302,49 @@
     <script src="assets/js/ajaxform.js"></script>
     <script src="assets/js/subscribe-form.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/ad68a5abf4.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#subscribe-form').submit(function (e) {
+                e.preventDefault();
+
+                var form = $(this);
+                var url = form.attr('action');
+                var formData = form.serialize();
+
+                $('#result1')
+                    .text('Booking...')
+                    .removeClass('text-green-500 text-red-500')
+                    .addClass('text-blue-500');
+
+                form.find('button[type="submit"]').prop('disabled', true);
+
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: formData,
+                    dataType: 'json',
+                    success: function (response) {
+                        $('#result1')
+                            .text(response.message)
+                            .removeClass('text-blue-500 text-red-500')
+                            .addClass('text-green-500');
+                        form.find('button[type="submit"]').prop('disabled', false);
+                        form[0].reset();
+                    },
+                    error: function (xhr, status, error) {
+                        var errorMessage = xhr.responseJSON?.message || 'Something went wrong. Please try again.';
+                        $('#result1')
+                            .text(errorMessage)
+                            .removeClass('text-blue-500 text-green-500')
+                            .addClass('text-red-500');
+                        form.find('button[type="submit"]').prop('disabled', false);
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 
