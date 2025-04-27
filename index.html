@@ -62,12 +62,18 @@
         <div class="sticky-sidebar">
             <div class="sticky-sidebar-inner">
                 <div class="sidebar-top">
+
+
+
                     <div class="sidebar-logo">
                         <div class="left">
-                            <a href="index.html" class="logo-img">
-                                <img src="assets/imgs/logo.svg" alt="Logo">
+                            <a href="index.html" class="logo-img"
+                                title="iRawNewton Home - Flutter Developer in Kolkata">
+                                <img src="assets/imgs/logo.svg"
+                                    alt="iRawNewton - Best Mobile App and Flutter Developer in Kolkata">
                             </a>
-                            <a href="index.html" class="logo-text">Portfolio </a>
+                            <a href="index.html" class="logo-text"
+                                title="iRawNewton Portfolio - Mobile App Developer">Portfolio </a>
                         </div>
                         <div class="right">
                             <span id="current-time"></span>
@@ -75,18 +81,29 @@
                         </div>
                     </div>
 
-                    <div class="sidebar-me">
+
+
+
+                    <aside class="sidebar-me" itemscope itemtype="https://schema.org/Person">
                         <div class="sidebar-me-inner">
                             <div class="img-box">
-                                <img src="assets/imgs/me.png" alt="Me">
+                                <img src="assets/imgs/best-flutter-developer-kolkata.jpg"
+                                    alt="Gaurab Roy - Flutter Developer in Kolkata"
+                                    title="Gaurab Roy | Expert Flutter Developer from Kolkata" loading="lazy" width="60"
+                                    height="60" itemprop="image">
                             </div>
                             <div class="content">
-                                <h3>Gaurab Roy</h3>
-                                <p>Flutter Developer</p>
-                                <span class="location"><i class="ph-duotone ph-map-pin"></i> Kolkata</span>
+                                <h3 itemprop="name">Gaurab Roy</h3>
+                                <p itemprop="jobTitle">Flutter Developer</p>
+                                <span class="location" itemprop="address" itemscope
+                                    itemtype="https://schema.org/PostalAddress">
+                                    <i class="ph-duotone ph-map-pin"></i>
+                                    <span itemprop="addressLocality">Kolkata</span>
+                                </span>
                             </div>
                         </div>
-                    </div>
+                    </aside>
+
 
                     <div class="sidebar-menu">
                         <nav class="menu-lists">
@@ -177,14 +194,23 @@
             <section class="hero-area">
                 <div class="custom-container">
                     <div class="custom-row">
-                        <div class="hero-img">
-                            <img src="assets/imgs/hero.jpg" alt="Hero">
-                        </div>
+                        <figure class="hero-img" style="max-height: 500px; overflow: hidden;">
+                            <img src="assets/imgs/flutter-developer-kolkata.jpg"
+                                alt="iRawNewton - Best Flutter and Mobile App Developer in Kolkata, India"
+                                title="iRawNewton | Top Flutter and Mobile App Developer in Kolkata" loading="lazy"
+                                width="500" height="500" style="object-fit: cover; width: 100%; height: 100%;">
+                            <figcaption class="visually-hidden">
+                                Hire iRawNewton, the leading Flutter and mobile app developer in Kolkata. Building
+                                powerful mobile apps with great user experience.
+                            </figcaption>
+                        </figure>
+
 
                         <div class="hero-content-right">
                             <div class="hero-content-top">
                                 <div class="available-link-wrap">
-                                    <a href="#" class="available-link common-box">
+                                    <a href="#" class="available-link common-box"
+                                        aria-label="Available for freelance work as Flutter Developer in Kolkata">
                                         <span class="online-dot"></span>Available for freelance work
                                     </a>
                                 </div>
@@ -192,7 +218,8 @@
                                     <i class="ph ph-clock"></i> <span id="datetime"></span>
                                 </span>
 
-                                <a href="contact.html" class="theme-btn common-box">
+                                <a href="contact.html" class="theme-btn common-box"
+                                    aria-label="Contact Flutter Developer iRawNewton">
                                     <span>
                                         <span class="normal">Contact Me <i class="las la-arrow-right"></i></span>
                                         <span class="hover">Contact Me <i class="las la-arrow-right"></i></span>
@@ -202,13 +229,18 @@
 
                             <div class="hero-content-bottom">
                                 <div class="hero-content common-box">
-                                    <span>Software DEVELOPER</span>
+                                    <span>Mobile App & Software Developer</span>
                                     <h1>Gaurab Roy 🥷</h1>
-                                    <p>I'm a software developer based in India, specializing in crafting mobile apps and
-                                        websites. With over 2 years of hands-on experience, I bring a deep understanding
-                                        of software development principles and a keen eye for creating intuitive user
-                                        experiences.</p>
-                                    <img src="assets/imgs/signature.svg" alt="Signeture" class="signeture">
+                                    <h2 class="visually-hidden">Top Flutter Developer and Mobile App Specialist in
+                                        Kolkata</h2>
+                                    <p>
+                                        I'm Gaurab Roy, a professional software developer based in Kolkata, India.
+                                        I specialize in creating mobile applications and websites using Flutter and
+                                        other technologies.
+                                        With over 2 years of experience, I focus on delivering high-quality apps with
+                                        intuitive designs and smooth user experiences.
+                                    </p>
+                                    <img src="assets/imgs/signature.svg" alt="Gaurab Roy Signature" class="signeture">
                                 </div>
 
                                 <div class="hero-map-wrap">
